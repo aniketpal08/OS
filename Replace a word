@@ -1,0 +1,9 @@
+#!/bin/bash
+echo "Enter the filename: "
+read file
+echo "Enter the word to replace: "
+read old
+echo "Enter the new word: "
+read new
+sed -i "s/$old/$new/g" "$file"
+echo "Replacement done."
