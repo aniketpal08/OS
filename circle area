@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo -n "Enter radius of the circle: "
+read radius
+
+# Use bc for floating point arithmetic
+area=$(echo "scale=2; 3.1416 * $radius * $radius" | bc)
+
+echo "Area of the circle with radius $radius is: $area"
