@@ -1,0 +1,12 @@
+Sum=$((10+3))
+echo "Sum = $Sum"  
+Difference=$((20-3))
+echo "Difference = $Difference"
+Product=$((12*3))
+echo "Product = $Product"
+Division=$((9/3))
+echo "Division = $Division"
+Modulo=$((10%3))
+echo "Modulo = $Modulo"
+Exponent=$((10**3))
+echo "Exponent = $Exponent
