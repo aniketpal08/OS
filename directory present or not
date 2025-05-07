@@ -1,0 +1,18 @@
+#!/bin/bash
+
+echo -n "Enter the path of the file or directory: "
+read path
+
+if [ -e "$path" ]; then
+    echo "$path exists."
+else
+    echo "$path does not exist. Creating now..."
+
+    if [[ "$path" == */ ]]; then
+        mkdir -p "$path"
+        echo "Directory $path created."
+    else
+        touch "$path"
+        echo "File $path created."
+    fi
+fi
