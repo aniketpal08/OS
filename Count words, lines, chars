@@ -1,0 +1,7 @@
+
+echo "Enter the filename: "
+read file
+
+echo "Lines: $(grep -c '' "$file")"
+echo "Words: $(grep -oE '\S+' "$file" | wc -l)"
+echo "Characters: $(grep -o . "$file" | wc -l)"
