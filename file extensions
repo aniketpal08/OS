@@ -1,0 +1,5 @@
+echo "Enter the file extension (e.g., txt, sh, c, py): "
+read ext
+
+echo "Files with .$ext extension:"
+ls -1 | egrep "\.${ext}$"
